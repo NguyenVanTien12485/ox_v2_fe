@@ -1,10 +1,11 @@
 <template>
-  <div>
-    <h4>Other Module Page</h4>
-    <OkxeDefaultButton />
-  </div>
+    <NuxtLayout :name="layout">
+        <store-register />
+    </NuxtLayout>
 </template>
 
-<script setup>
-import OkxeDefaultButton from '../modules/design-system/components/buttons/OkxeDefaultButton.vue'
+<script setup lang="ts">
+import StoreRegister from "../modules/store-register/index.vue";
+
+const layout = "default";
 </script>
